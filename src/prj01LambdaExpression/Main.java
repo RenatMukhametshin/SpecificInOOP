@@ -44,6 +44,22 @@ public class Main {
             System.out.println(employee);
         }
 
+        //forEach example
+        staff.forEach(employee -> System.out.println(employee));
+
+        //forEach more short
+        System.out.println("\nOld salaries:");
+        staff.forEach(System.out::println);
+
+        //change salaries
+        int salaryIncrease = 10000;
+        staff.forEach(e -> e.setSalary(e.getSalary() + salaryIncrease));
+
+        System.out.println("\nNew salaries:");
+        staff.forEach(System.out::println);
+
+
+
 
     }
 
