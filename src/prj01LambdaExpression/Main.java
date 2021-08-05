@@ -38,6 +38,12 @@ public class Main {
             System.out.println(employee);
         }
 
+        System.out.println("\nSorted name");
+        Collections.sort(staff, Comparator.comparing(Employee::getName));
+        for(Employee employee : staff){
+            System.out.println(employee);
+        }
+
 
     }
 
