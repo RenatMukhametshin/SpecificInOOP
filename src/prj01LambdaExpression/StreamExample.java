@@ -18,8 +18,8 @@ public class StreamExample {
 
         Stream<Employee> stream = staff.stream();
         //show only emloyees with >= 100000 salary
-        System.out.println("\nSalaries >= 100000");
-        stream.filter(employee -> employee.getSalary() >= 100000).forEach(System.out::println);
+        System.out.println("\nSalaries == 140000");
+        stream.filter(employee -> employee.getSalary() == 140000).forEach(System.out::println);
 
         //create stream and show only even number%2==0
         Stream<Integer> numbers = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
